@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>Cafe 7 Dream</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+<section class="sub-header1">
+    <nav>
+        <a href= "index.html"><img src="images/cafelogo.png"></a>
+        <div class="nav-links" id="nav-links">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+             </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Menu</h1>
+    
+</section>
+
+<!----btt--->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<!---scriptybtt-->
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+    
+
+<!----menu-->
+
+<section class="menu">
+    <h1><img src="images/cafeml1.png"></h1>
+    <div class="menu2">
+        <h3>Coffee</h3>
+         <p><img src="images/menu1.png"></p>
+    </div>
+    <div class="menu3">
+        <h3>Beverage</h3>
+         <p><img src="images/menu2.png"></p>
+    </div>
+    <div class="menu4">
+        <h3>Dessert</h3>
+         <p><img src="images/menu3.png"></p>
+    </div>
+</section>
+
+<!---- behind -------->
+
+<!---cafevlog-->
+
+<!---the 7 dream-->
+
+<!---reviews-->
+
+
+<!---calltoact-->
+
+<!---footer-->
+<section class="footer">
+    <h4>VISIT US</h4>
+    <p>Cafe 7 DREAM <br>
+    825, Dream-ro 7-gil, Dream-gu, Seoul <br>
+    4/1~4/5[OPEN] 10AM   [CLOSE] 9PM</p>
+    <h5>✧ Made by JACK (.◜◡◝) ✧</h5>
+</section>
+
+
+<!----script whatevs-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+</script>
+
+</body>
+</html>

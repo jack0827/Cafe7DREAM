@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>Cafe 7 Dream</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href= "index.html"><img src="images/cafelogo.png"></a>
+        <div class="nav-links" id="nav-links">
+        <i class="fa fa-window-close" aria-hidden="true" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact">CONTACT</a></li>
+             </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact us</h1>
+    
+</section>
+<!----btt--->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<!---scriptybtt-->
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<!---contact-->
+<section class="loc">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67400.12584410446!2d127.06179826359384!3d37.538549440600654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca36dfd50f1b9%3A0xfc1a21ccfe4444e4!2zU03sl5TthLDthYzsnbjrqLztirg!5e0!3m2!1sen!2sph!4v1629730023449!5m2!1sen!2sph" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<section class="cont">
+    <div class="row">
+        <div class="contcl">
+            <div>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                    <h5>Cafe 7 DREAM</h5>
+                    <p>825, Dream-ro 7-gil, Dream-gu, Seoul</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                <span>
+                    <h5>4/1~4/5</h5>
+                    <p>[OPEN] 10AM [CLOSE] 9PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>
+                    <h5>cafe7dream@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contcl">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hfu-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+    
+
+
+<!---- behind -------->
+
+
+<!---reviews-->
+
+
+<!---calltoact-->
+
+<!---footer-->
+<section class="footer">
+    <h4>VISIT US</h4>
+    <p>Cafe 7 DREAM <br>
+    825, Dream-ro 7-gil, Dream-gu, Seoul <br>
+    4/1~4/5[OPEN] 10AM   [CLOSE] 9PM</p>
+    <h5>✧ Made by JACK (.◜◡◝) ✧</h5>
+</section>
+
+
+<!----script whatevs-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+</script>
+
+</body>
+</html>

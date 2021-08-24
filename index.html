@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>Cafe 7 Dream</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href= "index.html"><img src="images/cafelogo.png"></a>
+        <div class="nav-links" id="nav-links">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+             </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box">
+    <h1>Cafe  7  DREAM</h1>
+    <p>Come to Cafe 7 DREAM for a cup of warm coffee.</p>
+    <a href="https://www.instagram.com/nct_dream/" target="_blank" class="hero-btn">Visit us to know more</a>
+</div>
+    
+</section>
+
+<!---- this is -------->
+<section class="hfu">
+    <div class="row4">
+        <div class="hfu-y">
+            <img src="images/this1.jpg">
+        </div>
+        <div class="hfu-x">
+            <h1>This is <br>Cafe 7 DREAM</h1>
+    <p>This 'Cafe 7 DREAM' content is planned as a special gift <br>
+        for fans on April Fool's Day, and the NCT DREAM <br>
+        members transformed into a barista concept that <br>
+        fans wanted to see, making coffeeand desserts, <br>
+        etc. Since the story is scheduled to be<br>
+        presented, high interest is expected.</p>
+</section>
+
+<!---cafevlog-->
+<section class="vlog">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/IXrXIEH1dKo">
+    </iframe>
+    <h1>Our latest Cafe Vlog</h1>
+    <p>This cafe vlog follows the daily lives of our employees as they <br>
+        strive to give you the best and ~spicy~ coffee in town!</p>
+    <a href="https://www.youtube.com/hashtag/%EC%B9%B4%ED%8E%987%EB%93%9C%EB%A6%BC" target="_blank" class="vlog-btn">See more</a>
+</section>
+<!----btt--->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<!---scriptybtt-->
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+    
+
+
+<!---the 7 dream-->
+
+<!---reviews-->
+
+<section class="reviews">
+    <h1>Reviews</h1>
+    <div class = "row">
+        <div class = "reviews-col">
+            <img src="images/user1.jpg">
+            <div>
+                <p>Perhaps they got the best coffee in Seoul. <br>
+                A big fan of the Namericano, it'll <br>
+            really keep you awake.</p>
+            <h3>Johnny Suh</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class = "reviews-col">
+            <img src="images/user2.jpg">
+            <div>
+                <p>Really love the ambiance of the shop. <br>
+                Also, the dessert and drinks were <br>
+            super spicy.</p>
+            <h3>Jaehyun Jung</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!---calltoact-->
+<div class="cta">
+    <h1><img src = "images/cafelogo.png"></h1>
+    <a href="contact.html" class="hero-btn">CONTACT US</a>
+</div>
+
+<!---footer-->
+<section class="footer">
+    <h4>VISIT US</h4>
+    <p>Cafe 7 DREAM <br>
+    825, Dream-ro 7-gil, Dream-gu, Seoul <br>
+    4/1~4/5[OPEN] 10AM   [CLOSE] 9PM</p>
+    <h5>✧ Made by JACK (.◜◡◝) ✧</h5>
+</section>
+
+
+<!----script whatevs-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+</script>
+
+</body>
+</html>
