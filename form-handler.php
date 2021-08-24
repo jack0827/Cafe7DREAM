@@ -4,7 +4,7 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = 'https://jack0827.github.io/Cafe7DREAM/contact.html';
+$email_from = 'https://jack0827.github.io/Cafe7DREAM/';
 
 $email_subject = 'New form submission';
 
@@ -21,7 +21,7 @@ $headers .= "Reply-To: $visitor_email \r\n";
 
 mail($to, $email_subject, $email_body, $headers);
 
-header("Location. contact.html");
+header("Location: contact.html");
 
 
 ?>
