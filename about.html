@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+     <title>Cafe 7 Dream</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href= "index.html"><img src="images/cafelogo.png"></a>
+        <div class="nav-links" id="nav-links">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+             </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+    
+</section>
+<!----btt--->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<!---scriptybtt-->
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+    
+
+
+<!---- behind -------->
+
+<section class="behind">
+    <h1>Behind the DREAM</h1>
+    <p>Established in 2021, Cafe 7 DREAM is a five-day virtual cafe that aims to serve as a spoiler <br>
+        for NCT DREAM's first full length album. It also showcases the first ever 7 DREAM <br>
+        comeback since 2018. In addition, the cafe offers a unique menu that <br>
+        will satisfy one's impeccable taste.
+    </p>
+    <div class="row">
+        <div class="behind">
+            <h3><img src="images/behind1.png"></h3>
+        </div>
+        <div class="behind">
+            <h3><img src="images/abtbg.jpg"></h3>
+        </div>
+        <div class="behind">
+            <h3><img src="images/behind2.png"></h3>
+        </div>
+    </div>
+    
+</section>
+
+<!---cafevlog-->
+<section class="vlog">
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/EIClOUIRqMY">
+    </iframe>
+    <h1>This is Cafe 7 DREAM</h1>
+    <p>This 'Cafe 7 DREAM' content is planned as a special gift for fans on April Fool's Day, <br>
+        and the NCT DREAM members transformed into a barista concept that fans wanted to <br>
+        see, making coffee and desserts, making cafes, etc. Since the story is <br> 
+        scheduled to be presented, high interest is expected.</p>
+</section>
+
+<!---the 7 dream-->
+
+<section class="dream">
+    <h1>Meet the 7 DREAM</h1>
+    <p>NCT DREAM surprises NCTzens with the warm appearance and pleasant characters <br> 
+        of the members who transformed into cafe employees such as baristas, <br>
+        bakers, managers, designers, etc. Including, it amplified <br>
+        the curiosity about the story to unfold.</p>
+    <div class="row2">
+        <div class="dreamrow">
+            <img src="images/dream6.png">
+            <div class="layer">
+                <a href="https://www.instagram.com/nct_dream/" target="_blank">
+                <h3>CHENLE, Manager</h3>
+                </a>
+            </div>
+        </div>
+        <div class="dreamrow">
+            <img src="images/dream5.png">
+            <div class="layer">
+                <a href="https://www.instagram.com/na.jaemin0813/" target="_blank">
+                <h3>JAEMIN, Barista</h3>
+                </a>
+            </div>
+        </div>
+        <div class="dreamrow">
+            <img src="images/dream3.png">
+            <div class="layer">
+                <a href="https://www.instagram.com/nct_dream/" target="_blank">
+                <h3>JENO, Barista</h3>
+                </a>
+            </div>
+        </div>
+        <div class="dreamrow">
+            <img src="images/dream1.png">
+            <div class="layer">
+                <a href="https://www.instagram.com/onyourm__ark/" target="_blank">
+                <h3>MARK, Baker</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row1">
+        <div class="dreamrow1">
+            <img src="images/dream4.png">
+            <div class="layer">
+                <a href="https://www.instagram.com/fullsun_ncit/" target="_blank">
+                <h3>HAECHAN, Baker</h3>
+                </a>
+            </div>
+        </div>
+        <div class="dreamrow1">
+            <img src="images/dream2.png">
+            <div class="layer">
+                <a href="https://www.instagram.com/yellow_3to3/" target="_blank">
+                <h3>RENJUN, Designer</h3>
+                </a>
+            </div>
+        </div>
+        <div class="dreamrow1">
+            <img src="images/dream7.png">
+            <div class="layer">
+                <a href="https://www.instagram.com/nct_dream/" target="_blank">
+                <h3>JISUNG, Researcher</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!---reviews-->
+
+
+<!---calltoact-->
+
+<!---footer-->
+<section class="footer">
+    <h4>VISIT US</h4>
+    <p>Cafe 7 DREAM <br>
+    825, Dream-ro 7-gil, Dream-gu, Seoul <br>
+    4/1~4/5[OPEN] 10AM   [CLOSE] 9PM</p>
+    <h5>✧ Made by JACK (.◜◡◝) ✧</h5>
+</section>
+
+
+<!----script whatevs-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+</script>
+
+</body>
+</html>
